@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webstudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./css/mobile.css" rel="stylesheet" />
+    <link href="./css/tablet.css" rel="stylesheet" />
+    <link href="./css/desktop.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mimino-container">
+      <h1 class="mimino-title">Mimino</h1>
+      <button type="button" data-modal-open class="hero-btn">
+        BOOK A TABLE
+      </button>
+      <button type="button" datar-modal-open class="hero-btn">
+        BOOK A ROOM
+      </button>
+      <button type="button" datap-modal-open class="hero-btn">
+        PRICES PER ROOM
+      </button>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-close">
+          <svg class="button-x" width="12" height="12">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">BOOK A TABLE</p>
+        <form >
+          <div class="modal-form">
+            <div>
+            <div class="modal-field">
+              <label class="modal-input-text" for="user-text">YOUR NAME</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  name="user-name"
+                  type="text"
+                  placeholder="Who should book a table for?"
+                  required
+                  minlength="2"
+                />
+              </div>
+            </div>
+            <div class="modal-field">
+              <label class="modal-input-text" for="user-text"
+                >NUMBER OF PEOPLE</label
+              >
+              <div class="input-wrap">
+                <select class="select" name="NUMBER OF PEOPLE" form="b-form">
+                  <option value="quantity">1</option>
+                  <option value="quantity">2</option>
+                  <option value="quantity">3</option>
+                  <option value="quantity">4</option>
+                  <option value="quantity">over 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="modal-field">
+              <label class="modal-input-text" for="user-text">TODAY</label>
+              <div class="input-wrap">
+                <select class="select" name="TODAY" form="c-form">
+                  <option value="when">today</option>
+                  <option value="when">tomorrow</option>
+                  <option value="when">day after tomorrow</option>
+                </select>
+                <input
+                  class="modal-input"
+                  name="user-today"
+                  type="date"
+                  placeholder="What date to book?"
+                  required
+                  minlength="2"
+                />
+              </div>
+            </div>
+            <div class="modal-field">
+              <label class="modal-input-text" for="user-tel">+ 38 ()</label>
+              <div class="input-wrap">
+                <input
+                  class="modal-input"
+                  id="user-tel"
+                  name="user-tel"
+                  type="tel"
+                  title="+380 (96) 111-11-11"
+                  placeholder="Phone number"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="modal-btn-form button">
+              MAKE A RESERVATION
+            </button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
+  </body>
+</html>
