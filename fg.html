@@ -47,22 +47,24 @@
           <p class="modal-title">BOOK A TABLE</p>          
           <form class="modal-form">          
               <div class="modal-field">
-                <label class="modal-input-text" for="user-name">YOUR NAME</label>
+                <label class="modal-input-text" for="user-name"></label>
                 <div class="input-wrap">
                   <input class="modal-input"
                     id="user-name"
                     name="user-name"
                     type="text"
-                    placeholder=""
+                    placeholder="YOUR NAME"
+                    pattern="^[a-zA-Zа-яА-Яа-яА-Яі-Ії-Ї]+$"
                     required
                     minlength="2"/>
                     <p class="modal-text">Who should book a table for?</p>
                 </div>
               </div>
               <div class="modal-field">
-                <label class="modal-input-text" for="number-of-people">NUMBER OF PEOPLE</label>
+                <label class="modal-input-text" for="number-of-people"></label>
                 <div class="input-wrap">
-                  <select class="modal-input" name="number-of-people">
+                  <select class="modal-input" name="number-of-people" placeholder="NUMBER OF PEOPLE">
+                    <option value="quantity">NUMBER OF PEOPLE</option>
                     <option value="quantity">1</option>
                     <option value="quantity">2</option>
                     <option value="quantity">3</option>
@@ -72,26 +74,26 @@
                 </div>
               </div>
               <div class="modal-field">
-                <label class="modal-input-text" for="today">TODAY</label>
+                <label class="modal-input-text" for="today"></label>
                 <div class="input-wrap">
-                  <select class="modal-input" name="today">
-                    <option value="when">today</option>
-                    <option value="when">tomorrow</option>
-                    <option value="when">day after tomorrow</option>
+                  <select class="modal-input" name="today" placeholder="TODAY">
+                    <option value="when">TODAY</option>
+                    <option value="when">TOMORROW</option>
+                    <option value="when">DAY AFTER TOMORROW</option>
                   </select>
                   <p class="modal-text">What date to book?</p>
                 </div>
               </div>               
               <div class="modal-field">
-                <label class="modal-input-text" for="user-tel">+ 38 ()</label>
+                <label class="modal-input-text" for="user-tel"></label>
                 <div class="input-wrap">
                   <input class="modal-input"
                     id="user-tel"
                     name="user-tel"
                     type="tel"
                     pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-                    title="+380 (96) 111-11-11"
-                    placeholder=""
+                    title=""
+                    placeholder="+ 38 ()"
                     required/>
                     <p class="modal-text">Phone number</p>
                 </div>
@@ -110,20 +112,20 @@
           <p class="modal-title">BOOK A ROOM</p>          
           <form class="modal-form">          
               <div class="modal-field">
-                <label class="modal-input-text" for="user-name">YOUR NAME</label>
+                <label class="modal-input-text" for="user-name"></label>
                 <div class="input-wrap">
                   <input class="modal-input"
                     id="user-name"
                     name="user-name"
                     type="text"
-                    placeholder=""
+                    placeholder="YOUR NAME"
                     required
                     minlength="2"/>
                     <p class="modal-text">Who should book a table for?</p>
                 </div>
               </div>
               <div class="modal-field">
-                <label class="modal-input-text" for="user-tel">+ 38 ()</label>
+                <label class="modal-input-text" for="user-tel"></label>
                 <div class="input-wrap">
                   <input class="modal-input"
                     id="user-tel"
@@ -131,55 +133,41 @@
                     type="tel"
                     pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
                     title="+380 (96) 111-11-11"
-                    placeholder=""
+                    placeholder="+ 38 ()"
                     required/>
                     <p class="modal-text">Phone number</p>
                 </div>
               </div>              
               <div class="modal-field">
-                <label class="modal-input-text" for="today">TODAY</label>
+                <label class="modal-input-text" for="today"></label>
                 <div class="input-wrap">
                   <select class="modal-input" name="today">
-                    <option value="when">today</option>
-                    <option value="when">tomorrow</option>
-                    <option value="when">day after tomorrow</option>
+                    <option value="when">TODAY</option>
+                    <option value="when">TOMORROW</option>
+                    <option value="when">DAY AFTER TOMORROW</option>
+                  </select>
+                  <p class="modal-text">Check-in date</p>
+                </div>
+              </div>             
+              <div class="modal-field">
+                <label class="modal-input-text" for="data"></label>
+                <div class="input-wrap">
+                  <select class="modal-input" name="data" placeholder="25/04/2023">
+                    <option value="when">25/04/2023</option>
+                    <option value="when">26/04/2023</option>
+                    <option value="when">27/04/2023</option>
                   </select>
                   <p class="modal-text">Check-in date</p>
                 </div>
               </div>
               <div class="modal-field">
-                <label class="modal-input-text" for="Date">TODAY</label>
-                <div class="input-wrap">
-                    <input class="modal-input"
-                    name="user-today"
-                    type="date"
-                    placeholder=""
-                    required
-                    minlength=""/>
-                    <p class="modal-text">Check-in date</p>
-                </div>
-            </div>               
-              <div class="modal-field">
-                <label class="modal-input-text" for="number-of-people">NUMBER OF PEOPLE</label>
-                <div class="input-wrap">
-                  <select class="modal-input" name="number-of-people">
-                    <option value="quantity">1</option>
-                    <option value="quantity">2</option>
-                    <option value="quantity">3</option>
-                    <option value="quantity">4</option>
-                    <option value="quantity">over 4</option>
-                  </select>
-                </div>
-              </div>
-              <div class="modal-field">
-                <label class="modal-input-text" for="number">DOUBLE SUITE</label>
+                <label class="modal-input-text" for="number"></label>
                 <div class="input-wrap">
                   <select class="modal-input" name="number">
-                    <option value="quantity">1</option>
-                    <option value="quantity">2</option>
-                    <option value="quantity">3</option>
-                    <option value="quantity">4</option>
-                    <option value="quantity">5</option>
+                    <option value="quantity">DOUBLE SUITE</option>
+                    <option value="quantity">DOUBLE LUXURY ROOM</option>
+                    <option value="quantity">TRIPLE ROOM</option>
+                    <option value="quantity">FOUR-SEATER ROOM</option>
                   </select>
                   <p class="modal-text">Number category</p>
                 </div>
@@ -199,9 +187,9 @@
           <form class="modal-form">
                 <p class="modal-input-title">DOUBLE SUITE</p>                
               <div class="modal-field">
-                <label class="modal-input-text" for="number">1</label>
+                <label class="modal-input-text" for="number"></label>
                 <div class="input-wrap">
-                  <select class="modal-input" name="number">
+                  <select class="modal-input" name="number"  placeholder="1">
                     <option value="quantity">1</option>
                     <option value="quantity">2</option>
                     <option value="quantity">3</option>
@@ -212,14 +200,13 @@
                 </div>
               </div>
               <div class="modal-field">
-                <label class="modal-input-text" for="Date">25/04/2023</label>
+                <label class="modal-input-text" for="Date"></label>
                 <div class="input-wrap">
-                    <input class="modal-input"
-                    name="date"
-                    type="date"
-                    placeholder=""
-                    required
-                    minlength=""/>
+                  <select class="modal-input" name="data" placeholder="25/04/2023">
+                    <option value="when">25/04/2023</option>
+                    <option value="when">26/04/2023</option>
+                    <option value="when">27/04/2023</option>
+                  </select>
                   <p class="modal-text">Check-in date</p>
                 </div>
               </div>                        
